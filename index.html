@@ -6,44 +6,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <h2>Love Quotient Calculator</h2>
+    </div>
+
     <div class="container">
-        <h1>Love Quotient Calculator</h1>
-        <p>Calculate the strength and depth of your relationship with this Love Quotient calculator.</p>
+        <h1>Welcome to the Love Quotient Calculator</h1>
+        <p>Calculate the strength and depth of your relationship.</p>
+        
         <form id="lqForm">
-            <label for="frequencyOfCommunication">Frequency of Communication: <span class="description">How often do you communicate?</span></label>
-            <input type="number" id="frequencyOfCommunication" placeholder="Frequency"><br>
+            <div class="input-group">
+                <label for="frequencyOfCommunication">Frequency of Communication:</label>
+                <input type="number" id="frequencyOfCommunication" placeholder="Frequency">
+            </div>
 
-            <label for="durationOfTrust">Duration of Trust: <span class="description">Number of months/years of trust in the relationship.</span></label>
-            <input type="number" id="durationOfTrust" placeholder="Duration (months)"><br>
+            <div class="input-group">
+                <label for="durationOfTrust">Duration of Trust (months):</label>
+                <input type="number" id="durationOfTrust" placeholder="Duration in months">
+            </div>
 
-            <label for="mutualActivitiesParticipation">Mutual Activities Participation: <span class="description">Number of activities done together per month.</span></label>
-            <input type="number" id="mutualActivitiesParticipation" placeholder="Activities per month"><br>
+            <div class="input-group">
+                <label for="mutualActivitiesParticipation">Mutual Activities Participation:</label>
+                <input type="number" id="mutualActivitiesParticipation" placeholder="Activities per month">
+            </div>
 
-            <label for="conflictResolutionTime">Conflict Resolution Time: <span class="description">Average time taken to resolve conflicts (in hours).</span></label>
-            <input type="number" id="conflictResolutionTime" placeholder="Time (hours)"><br>
+            <div class="input-group">
+                <label for="conflictResolutionTime">Conflict Resolution Time (hours):</label>
+                <input type="number" id="conflictResolutionTime" placeholder="Time in hours">
+            </div>
 
-            <label for="sharedInterests">Number of Shared Interests: <span class="description">How many interests or hobbies do you share?</span></label>
-            <input type="number" id="sharedInterests" placeholder="Shared Interests"><br>
+            <div class="input-group">
+                <label for="sharedInterests">Number of Shared Interests:</label>
+                <input type="number" id="sharedInterests" placeholder="Number of interests">
+            </div>
 
-            <label for="supportActions">Number of Support Actions: <span class="description">How often do you perform supportive actions for each other per week?</span></label>
-            <input type="number" id="supportActions" placeholder="Actions per week"><br>
+            <div class="input-group">
+                <label for="supportActions">Number of Support Actions per Week:</label>
+                <input type="number" id="supportActions" placeholder="Actions per week">
+            </div>
 
-            <label for="physicalIntimacyFrequency">Physical Intimacy Frequency: <span class="description">Frequency of physical intimacy per week.</span></label>
-            <input type="number" id="physicalIntimacyFrequency" placeholder="Frequency per week"><br>
+            <div class="input-group">
+                <label for="physicalIntimacyFrequency">Physical Intimacy Frequency per Week:</label>
+                <input type="number" id="physicalIntimacyFrequency" placeholder="Frequency per week">
+            </div>
 
-            <label for="qualityTimeTogether">Quality Time Together: <span class="description">Hours spent together in quality time per week.</span></label>
-            <input type="number" id="qualityTimeTogether" placeholder="Hours per week"><br>
+            <div class="input-group">
+                <label for="qualityTimeTogether">Quality Time Together (hours per week):</label>
+                <input type="number" id="qualityTimeTogether" placeholder="Hours per week">
+            </div>
 
-            <label for="individualHappinessScore">Individual Happiness Score: <span class="description">Rate your happiness in the relationship on a scale of 1-10.</span></label>
-            <input type="number" id="individualHappinessScore" placeholder="Score (1-10)"><br>
+            <div class="input-group">
+                <label for="individualHappinessScore">Individual Happiness Score (1-10):</label>
+                <input type="number" id="individualHappinessScore" placeholder="Score (1-10)">
+            </div>
 
-            <label for="empathyLevel">Empathy Level: <span class="description">Rate your level of empathy towards your partner on a scale of 1-10.</span></label>
-            <input type="number" id="empathyLevel" placeholder="Level (1-10)"><br>
+            <div class="input-group">
+                <label for="empathyLevel">Empathy Level (1-10):</label>
+                <input type="number" id="empathyLevel" placeholder="Level (1-10)">
+            </div>
 
             <button type="button" onclick="calculateLQ()">Calculate LQ</button>
         </form>
+
         <div id="result"></div>
     </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Love Quotient Calculator. All rights reserved.</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
